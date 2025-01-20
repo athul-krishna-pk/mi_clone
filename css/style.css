@@ -241,3 +241,87 @@ width: 100%;
     transform:scale(1.1);
     
 }
+/* exclusive offer */
+.exclusive_offer_text{
+    font-family: "MiSans Latin", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 120px;
+    margin-bottom: 48px;
+    margin-top: 80px;
+    
+}
+.learn_more_btn_offers{
+    position: absolute;
+    
+    left: 90px;
+}
+.offers_card{
+    position: relative;
+    cursor: pointer;
+}
+.offers_card:hover img{
+    transform: scale(1.1);
+    transition: all 0.5s;
+
+}
+.offers_card a{
+    position: absolute;
+    bottom: 25%;
+    
+    opacity: 0;
+    transform: translateY(90%);
+    transition: all 0.5s;
+}
+.offers_card:hover a{
+    opacity: 1;
+    transform: translateY(0%);
+}
+.offers_card:hover p{
+    transform: translateY(-90%);
+    opacity: 0;
+    transition: all ease-out 0.5s;
+}
+.offers_card h5{
+    font-family: "MiSans Latin", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+.offers_card p{
+    font-family: "MiSans Latin", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 30px;
+}
+/* explore section */
+.explore_section h5{
+    font-family: "MiSans Latin", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height:22.5px;
+    padding-top: 10px;
+}
+.explore_section a{
+    font-family: "MiSans Latin", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+.explore_card{
+    position: relative;
+    cursor: pointer;
+}
+.explore_card a{
+    opacity: 0;
+    transform: translateY(0%);
+}
+.explore_card:hover a{
+    position: absolute;
+    top: 410px;
+    left: 40%;
+    opacity: 100%;
+    transform: translatey(-60%);
+    transition: all  .6s;
+}
