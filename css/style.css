@@ -7,6 +7,7 @@ header{
 }
 @import url(https://i03.appmifile.com/i18n/fonts/MiSansLatin/vf/4.woff2?v=lwrpi0tp);
 @import url(https://i03.appmifile.com/i18n/fonts/MiSansLatin/vf/3.woff2?v=lwrpi0tp);
+
 .nav-link{
     position: relative;
     font-family: "MiSans Latin", sans-serif;
@@ -251,77 +252,238 @@ width: 100%;
     margin-top: 80px;
     
 }
-.learn_more_btn_offers{
-    position: absolute;
-    
-    left: 90px;
+.learn_more_btn_offer{
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
 }
-.offers_card{
-    position: relative;
-    cursor: pointer;
-}
-.offers_card:hover img{
-    transform: scale(1.1);
-    transition: all 0.5s;
-
-}
-.offers_card a{
-    position: absolute;
-    bottom: 25%;
-    
-    opacity: 0;
-    transform: translateY(90%);
-    transition: all 0.5s;
-}
-.offers_card:hover a{
-    opacity: 1;
-    transform: translateY(0%);
-}
-.offers_card:hover p{
-    transform: translateY(-90%);
-    opacity: 0;
-    transition: all ease-out 0.5s;
-}
-.offers_card h5{
+.card_body h5{
     font-family: "MiSans Latin", sans-serif;
     font-size: 22px;
     font-weight: 700;
-    text-align: center;
 }
-.offers_card p{
+.card_body p{
     font-family: "MiSans Latin", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    text-align: center;
-    line-height: 30px;
 }
-/* explore section */
-.explore_section h5{
-    font-family: "MiSans Latin", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height:22.5px;
-    padding-top: 10px;
+.card_offer:hover img{
+    transform: scale(1.1);
+    transition:ease-in-out 0.5s;
 }
-.explore_section a{
-    font-family: "MiSans Latin", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    
-}
-.explore_card{
+.card_offer{
     position: relative;
-    cursor: pointer;
 }
-.explore_card a{
+.card_offer button{
     opacity: 0;
     transform: translateY(0%);
 }
-.explore_card:hover a{
-    position: absolute;
-    top: 410px;
-    left: 40%;
-    opacity: 100%;
-    transform: translatey(-60%);
-    transition: all  .6s;
+.card_offer:hover button{
+    opacity: 1;
+    transform: translateY(-90%);
+    transition: all 0.5s;
+    
+}
+.card_offer:hover p{
+    opacity: 0;
+    transform: translateY(-20%);
+    transition: all 0.5s;
+}
+/* explore section */
+.explore_card{
+    position: relative;
+}
+.explore_card h5{
+    font-family: "MiSans Latin", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+.explore_card button{
+    font-family: "MiSans Latin", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    opacity: 0;
+    transform: translateY(10%);
+}
+.explore_card:hover button{
+    opacity: 1;
+    transform: translateY(-10%);
+    transition: all ease-in-out 0.5s;
+}
+.support_container i{
+    width: 80px;
+    height: 80px;
+    color: rgb(158, 154, 154);
+  }
+  .support_h5 h5{
+    font-family: "MiSans Latin", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .supoprt_p{
+    font-family: "MiSans Latin", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+.support_hover:hover{
+    cursor: pointer;
+    color: #FF6900;
+}
+.support_hover:hover i{
+    color: #FF6900;
+}
+.footer_row{
+    padding-top: 64px;
+  }
+.footer_row h3 {
+    color: white;
+    font-family: "MiSans Latin", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.footer_row ul{
+    padding: 0px;
+}
+.footer_row li{
+    color: rgb(137, 137, 137);
+    cursor: pointer;
+    font-family: "MiSans Latin", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    list-style: none;
+    line-height: 20px;
+    padding-bottom: 16px;
+}
+.footer_row li:hover{
+text-decoration: underline;
+color: white;
+}
+.site_follow{
+    color: white;
+    font-family: "MiSans Latin", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.footer_connect h3{
+    font-family: "MiSans Latin", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.footer_qr_text h3{
+    font-family: "MiSans Latin", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.footer_qr_text p{
+    font-family: "MiSans Latin", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(137, 137, 137);
+}
+.footer_qr_wrapper{
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.footer_gplay_wrapper{
+    margin:16px;
+}
+#hr_footer{
+        height: 3px;
+        background-color: rgb(255, 255, 255); /* Red color */
+        border: none;
+        margin-top: 0px;
+}
+.footer_gplay_wrapper span{
+    font-family: "MiSans Latin", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+.footer_end_wrapper{
+    border-top: 1px solid rgb(137, 137, 137) ;
+}
+.footer_end_wrapper span{
+    
+    font-family: "MiSans Latin", sans-serif;
+    color: white;
+    font-size: 16px;
+    contain: content;
+    line-height: 50px;
+}
+@media (max-width:1400px) {
+    .footer_end_wrapper span{
+        font-size: 14px;
+    }
+}
+@media (max-width:1109px) {
+    .footer_end_wrapper span{
+        font-size: 10px;
+    }
+}
+.footer_end_wrapper a{
+    
+    font-family:"MiSans Latin", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    contain: content;
+    line-height: 50px;
+}
+@media(max-width:1059px){
+    .footer_end_wrapper a{
+        font-size: 14px;
+    }
+}
+@media(max-width:992px){
+    .footer_end_wrapper a{
+        font-size: 12px;
+    }
+}
+.footer_lg_wrapper h3{
+    display: block;
+    font-family: "MiSans Latin", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    padding-top: 20px;
+}
+.footer_lg_wrapper ul{
+    list-style: none;
+    list-style-type: none;
+}
+.footer_lg_wrapper li{
+    margin-right: 20px;
+}
+.footer_lg_wrapper input{
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 100%;
+}
+.gplay_wrapper{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: white;
+}
+.gplay_wrapper span{
+    font-family:"MiSans Latin", sans-serif ;
+    font-size: 12px;
+    font-weight: 400;
+    padding:7px 0px 7px 13px ;
+}
+.footer_span{
+    color: rgb(137, 137, 137);
+    line-height: 50px;
+}
+.footer_last_div{
+    border-top: 2px solid rgb(137, 137, 137) ;
 }
